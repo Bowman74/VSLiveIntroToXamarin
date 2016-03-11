@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinDemo7.Views.Landing">
+    <ListView  x:Name="lstClientList" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout VerticalOptions="Fill" HorizontalOptions="FillAndExpand" Orientation="Vertical" Padding="20, 0, 20, 0">
+                        <Label VerticalOptions="Fill" HorizontalOptions="FillAndExpand" Text="{Binding ClientName}" FontSize="16" />
+                        <Label VerticalOptions="Fill" HorizontalOptions="FillAndExpand" Text="{Binding ContactName}" FontSize="12" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

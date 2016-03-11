@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="110dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblUserName"
+        android:text="User Name:"
+        android:gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/txtUserName"
+        android:layout_alignBottom="@id/txtUserName"
+        android:layout_marginLeft="30dp" />
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUserName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblPassword"
+        android:text="Password:"
+        android:gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/txtPassword"
+        android:layout_alignBottom="@id/txtPassword"
+        android:layout_below="@id/lblUserName"
+        android:layout_marginLeft="30dp" />
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPassword"
+        android:layout_below="@id/txtUserName"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp" />
+</RelativeLayout>
